@@ -14,7 +14,7 @@ class _RemoteApiState extends State<RemoteApi> {
   Future<List<UserModel>> _getUserList() async {
     try {
       var response =
-          await Dio().get('https://jsonplaceholder.typicode.com/usersdfsdf');
+          await Dio().get('https://jsonplaceholder.typicode.com/users');
       List<UserModel> _userList = [];
       if (response.statusCode == 200) {
         _userList =
